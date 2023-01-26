@@ -6,7 +6,7 @@ const IndexPage = () => {
   return (
     <main>
         <div>
-            <h1>Boo</h1>
+            <h1>Manh Anh Tuan Nguyen</h1>
         </div>
     </main>
   )
