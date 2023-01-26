@@ -6,7 +6,7 @@ module.exports = {
     title: `Portfolio`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-web-font-loader", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
@@ -25,5 +25,12 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
+  }, {
+    resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Sofia Sans']
+        }
+      }
   }]
 };
