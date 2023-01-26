@@ -5,10 +5,10 @@ import "../style/site.css"
 const IndexPage = () => {
   return (
     <main>
-        <div>
-            <h1>Manh Anh Tuan Nguyen</h1>
-            <p>Welcome to my web portfolio, enjoy your stay...</p>
-        </div>
+      <div>
+          <h1 className="text-3xl">MANH ANH TUAN NGUYEN</h1>
+          <p>Welcome to my web portfolio, enjoy your stay...</p>
+      </div>
     </main>
   )
 }
