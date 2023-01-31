@@ -6,7 +6,7 @@ module.exports = {
     title: `Portfolio`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-postcss", "gatsby-plugin-sass", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-postcss", "gatsby-plugin-sass", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
@@ -26,11 +26,16 @@ module.exports = {
     },
     __key: "pages"
   }, {
-    resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Sofia Sans']
-        }
-      }
+    resolve: "gatsby-omni-font-loader",
+    options: {
+      mode: "async",
+      enableListener: true,
+      preconnect: ["https://fonts.gstatic.com"],
+
+      web: [{
+        name: "Sofia Sans",
+        file: "https://fonts.googleapis.com/css2?family=Sofia+Sans"
+      }]
+    }
   }]
 };
