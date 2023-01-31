@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link, Layout } from "gatsby"
-import "../style/site.css"
+import "../style/site.scss"
 
 const AboutPage = () => {
     return (

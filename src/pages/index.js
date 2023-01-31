@@ -1,16 +1,15 @@
 import * as React from "react"
-import { Link, Layout } from "gatsby"
-import "../style/site.css"
-
+import "../style/site.scss"
+import Navigation from "../components/navbar"
 
 const IndexPage = () => {
   return (
-      <main>
-        <div>
-          <h1 className="text-3xl">MANH ANH TUAN NGUYEN</h1>
-          <p>Welcome to my web portfolio, enjoy your stay...</p>
+    <main>
+        <div className="indexHeader">
+          <h1 class="text-[#FC5185]">MANH ANH TUAN NGUYEN</h1>
+          <h4 class="text-slate-400">Welcome to my web portfolio, enjoy your stay...</h4>
         </div>
-      </main>
+    </main>
   )
 }
 

@@ -1,9 +1,6 @@
-import React from 'react'
+import React from "react"
+import "../style/site.scss"
 
-export default function Layout({children}) {
-    return (
-        <div className="layout" style={{ margin: 'auto'}}>
-            
-        </div>
-    )
+const Layout = () => {
+    
 }

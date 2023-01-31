@@ -1,29 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
+import "../style/site.scss"
 
 const Navigation = () => {
     return (
         <nav>
             <ul>
                 <li>
-                    <Link to="/">
+                    <a href="/">
                         Home
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link to="/about">
+                    <a href="/about">
                         About Me
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link to="/education">
+                    <a href="/education">
                         Education
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                <Link to="/projects">
+                    <a href="/projects">
                         Projects
-                    </Link>
+                    </a>
                 </li>
             </ul>
         </nav>
