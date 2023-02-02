@@ -9,15 +9,17 @@ main {
             margin-bottom: 0;
         }
         h4 {
-            font-size: 45px;
+            font-size: 28px;
             margin-bottom: 0;
         }
-    }
-    .navigationBar {
-        Link {
-            color: #a8dadc;
+        li {
+            color: #48cae4;
+            &:hover {
+                color: #8ecae6;
+                font-style: italic;
+            }
         }
     }
-   
+        
     font-family: 'Sofia Sans';
 }
