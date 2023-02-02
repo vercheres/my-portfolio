@@ -6,18 +6,21 @@ const IndexPage = () => {
   return (
     <main>
         <div className="indexHeader">
-          <h1 class="text-[#FC5185] font-semibold">MANH ANH TUAN NGUYEN</h1>
-          <h4 class="text-blue-300 font-light">Welcome to my web portfolio, enjoy your stay...</h4>
+          <h1 class="text-[#e63946] font-semibold">MANH ANH TUAN NGUYEN</h1>
+          <h4 class="text-[#457b9d] font-light">Welcome to my web portfolio, enjoy your stay...</h4>
         </div>
         <div className="navigationBar">
-          <nav>
-            <ul>
-              <li>
-                  <Link to="/" class="text-slate-400">Home</Link>
+          <nav class="flex items-center justify-between">
+            <ul class="flex">
+              <li class="mr-6">
+                  <Link to="/">Home</Link>
+              </li>
+              <li class="mr-6">
+                  <Link to="/about" >About Me</Link>
               </li>
             </ul>
           </nav>
-        </div>
+          </div>
     </main>
   )
 }

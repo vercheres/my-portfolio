@@ -14,9 +14,10 @@ main {
         }
     }
     .navigationBar {
-        position: relative;
-        top: 0;
-        padding: 23px 0 0 100px;
+        Link {
+            color: #a8dadc;
+        }
     }
+   
     font-family: 'Sofia Sans';
 }
