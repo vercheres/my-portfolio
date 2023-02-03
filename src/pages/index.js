@@ -25,8 +25,8 @@ const IndexPage = () => {
               </li>
             </ul>
           </nav>
-          <h1 class="text-[#e63946] font-semibold">MANH ANH TUAN NGUYEN</h1>
-          <h4 class="text-[#1d3557] font-light">Welcome to my web portfolio, enjoy your stay...</h4>
+          <h1 class="font-black">HI THERE!</h1>
+          <h4 class="text-[#1d3557]">Welcome to my web portfolio, enjoy your stay...</h4>
         </div>
     </main>
   )

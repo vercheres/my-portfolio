@@ -25,7 +25,7 @@ const AboutPage = () => {
               </li>
             </ul>
           </nav>
-          <h1 class="text-[#e63946] font-semibold">PROJECTS</h1>
+          <h1 class="font-black">PROJECTS</h1>
         </div>
     </main>
     )
