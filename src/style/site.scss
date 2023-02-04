@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #fdfcdc;
+    background-color: #fdf0d5;
 
     main {
         .indexHeader {
@@ -11,22 +11,26 @@ body {
 
             h1 {
                 font-size: 65px;
-                color: #e63946;
+                color: #415a77;
                 margin-bottom: 0;
             }
             h4 {
                 font-size: 28px;
+                color: #1b263b;
                 margin-bottom: 0;
             }
+            p {
+                font-size: 21px;
+            }
             li {
-                color: #48cae4;
+                color: #780000;
                 &:hover {
-                    color: #8ecae6;
-                    font-style: italic;
+                    color: #b23a48;
+                    font-weight: 750;
                 }
             }
         }
-        .fourOhFour {
+        .errorM {
             position: absolute;
             top: 0;
             padding: 23px 0 0 100px;

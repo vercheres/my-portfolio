@@ -8,25 +8,25 @@ const AboutPage = () => {
         <div className="indexHeader">
         <nav class="flex items-center justify-between">
             <ul class="flex items-center justify-between">
-              <li class="mr-6">
+              <li class="mr-7">
                   <Link to="/">Home</Link>
               </li>
-              <li class="mr-6">
+              <li class="mr-7">
                   <Link to="/about/">About Me</Link>
               </li>
-              <li class="mr-6">
+              <li class="mr-7">
                   <Link to="/education/">Education</Link>
               </li>
-              <li class="mr-6">
+              <li class="mr-7">
                   <Link to="/projects/">Projects</Link>
               </li>
-              <li class="mr-6">
+              <li class="mr-7">
                   <Link to="/hobbies/">Hobbies</Link>
               </li>
             </ul>
           </nav>
           <h1 class="font-black">ABOUT ME</h1>
-          <h4>So a little bit about myself, I am a 4th year CS student based in Saint-Lambert, Québec. Throughout my years in CÉGEP, I have the privilege to work with a multitude of technologies </h4>
+          <p>So a little bit about myself, I am a 4th year CS college student based in Saint-Lambert, Québec. I have had the privilege to work with a multitude of technologies, software, frameworks, and </p>
         </div>
     </main>
     )

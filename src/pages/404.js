@@ -5,8 +5,8 @@ import "../style/site.scss"
 const IndexPage = () => {
   return (
     <main>
-        <div className="fourOhFour">
-          <h1 class="text-[#000000] font-black">:(</h1>
+        <div className="errorPage">
+          <h1 class="font-black">404 :(</h1>
         </div>
     </main>
   )
