@@ -26,7 +26,7 @@ const AboutPage = () => {
             </ul>
           </nav>
           <h1 class="font-black">ABOUT ME</h1>
-          <p></p>
+          <h4>So a little bit about myself, I am a 4th year CS student based in Saint-Lambert, Québec. Throughout my years in CÉGEP, I have the privilege to work with a multitude of technologies </h4>
         </div>
     </main>
     )

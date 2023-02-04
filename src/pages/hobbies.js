@@ -2,9 +2,9 @@ import * as React from "react"
 import { Link } from "gatsby"
 import "../style/site.scss"
 
-const IndexPage = () => {
-  return (
-    <main>
+const AboutPage = () => {
+    return (
+        <main>
         <div className="indexHeader">
         <nav class="flex items-center justify-between">
             <ul class="flex items-center justify-between">
@@ -25,13 +25,13 @@ const IndexPage = () => {
               </li>
             </ul>
           </nav>
-          <h1 class="font-black">HI THERE!</h1>
-          <h4 class="text-[#1d3557]">I'm Tuan, welcome to my web portfolio! Enjoy your stay...</h4>
+          <h1 class="font-black">HOBBIES</h1>
+          <h4></h4>
         </div>
     </main>
-  )
+    )
 }
 
-export default IndexPage
+export default AboutPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>About Me</title>
