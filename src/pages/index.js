@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import "../style/site.scss"
 import Menu from "../components/menu"
 
-
 const IndexPage = () => {
   return (
     <main>
@@ -27,8 +26,8 @@ const IndexPage = () => {
               </li>
             </ul>
           </nav>
-          <h1 class="font-black">HI THERE!</h1>
-          <h4>I'm Tuan, welcome to my web portfolio! Enjoy your stay...</h4>
+          <h1 class="font-black">MANH ANH TUAN NGUYEN</h1>
+          <h4>Welcome to my web portfolio! Enjoy your stay...</h4>
         </div>
     </main>
   )

@@ -26,13 +26,6 @@ module.exports = {
     },
     __key: "pages"
   },{
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
-    },
-    __key: "pages"
-  },{
     resolve: "gatsby-omni-font-loader",
     options: {
       mode: "async",
@@ -46,6 +39,18 @@ module.exports = {
         name: "Playfair Display",
         file: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       }]
+    }
+  },{
+    resolve: "gatsby-plugin-firebase",
+    options: {
+      credentials: {
+        apiKey: "AIzaSyBk0sx058CrF8VAvB6-iC-7ErFMt3tzSkE",
+        authDomain: "portfolio-8053b.firebaseapp.com",
+        projectId: "portfolio-8053b",
+        storageBucket: "portfolio-8053b.appspot.com",
+        messagingSenderId: "227195003111",
+        appId: "1:227195003111:web:e3c2686ffc17a5e0cf0242"
+      }
     }
   }
 ]
