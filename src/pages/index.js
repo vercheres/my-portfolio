@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "../style/site.scss"
+import Menu from "../components/menu"
+
 
 const IndexPage = () => {
   return (
