@@ -26,6 +26,7 @@ const AboutPage = () => {
             </ul>
           </nav>
           <h1 class="font-black">EDUCATION</h1>
+          
         </div>
     </main>
     )
