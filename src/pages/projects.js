@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import "../style/site.scss"
 
-const AboutPage = () => {
+const ProjectPage = () => {
     return (
         <main>
         <div className="indexHeader">
@@ -15,13 +15,13 @@ const AboutPage = () => {
                   <Link to="/about/">About Me</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/education/">Education</Link>
-              </li>
-              <li class="mr-7">
                   <Link to="/projects/">Projects</Link>
               </li>
               <li class="mr-7">
                   <Link to="/hobbies/">Hobbies</Link>
+              </li>
+              <li class="mr-7">
+                  <Link to="/contact/">Contact</Link>
               </li>
             </ul>
           </nav>
@@ -31,6 +31,6 @@ const AboutPage = () => {
     )
 }
 
-export default AboutPage
+export default ProjectPage
 
-export const Head = () => <title>About Me</title>
+export const Head = () => <title>Projects</title>
