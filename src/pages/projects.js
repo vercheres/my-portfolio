@@ -1,8 +1,12 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "../style/site.scss"
+import { getProjects } from "../utils/projects"
 
 const ProjectPage = () => {
+    React.useEffect(() => {
+        getProjects()
+    }, [])
     return (
         <main>
         <div className="indexHeader">
@@ -26,6 +30,7 @@ const ProjectPage = () => {
             </ul>
           </nav>
           <h1 class="font-black">PROJECTS</h1>
+
         </div>
     </main>
     )

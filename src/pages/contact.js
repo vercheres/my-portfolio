@@ -38,11 +38,7 @@ const ContactPage = () => {
               <label class="block uppercase tracking-wide text-gray-700 text-m font-bold mb-2" for="grid-email">
                 Email
               </label>
-              <input
-                class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 font-bold"
-                id="grid-email"
-                type="email"
-              />
+              <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 font-bold" id="grid-email" type="email"/>
             </div>
           </div>
           <div class="flex flex-wrap -mx-3 mb-6">
@@ -67,4 +63,4 @@ const ContactPage = () => {
 
 export default ContactPage;
 
-export const Head = () => <title>Contact</title>;
+export const Head = () => <title>Contact</title>
