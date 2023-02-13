@@ -1,38 +1,45 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "../style/site.scss"
-import { getProjects } from "../utils/projects"
+import { getProjects } from "../utils/logger"
+import { firestore } from "../utils/firebase"
+import Layout from "../components/layout"
 
 const ProjectPage = () => {
     React.useEffect(() => {
         getProjects()
     }, [])
     return (
-        <main>
-        <div className="indexHeader">
-        <nav class="flex items-center justify-between">
+        <Layout>
+        <div class="container">
+        <nav class="flex items-center justify-between px-2 py-2.5">
             <ul class="flex items-center justify-between">
               <li class="mr-7">
-                  <Link to="/">Home</Link>
+                  <Link to="/" class="block py-2 pl-3 pr-4">Home</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/about/">About Me</Link>
+                  <Link to="/about/" class="block py-2 pl-3 pr-4">About Me</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/projects/">Projects</Link>
+                  <Link to="/projects/" class="block py-2 pl-3 pr-4">Projects</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/hobbies/">Hobbies</Link>
+                  <Link to="/hobbies/" class="block py-2 pl-3 pr-4">Hobbies</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/contact/">Contact</Link>
+                  <Link to="/contact/" class="block py-2 pl-3 pr-4">Contact</Link>
               </li>
             </ul>
           </nav>
-          <h1 class="font-black">PROJECTS</h1>
-
+            <h1 class="font-black">PROJECTS</h1>
+            <h4>A list of projects that I worked on/have been a part of, amusez vous!</h4>
+            <div class="flex">
+                <div className="projectDetail">
+                    {}
+                </div>
+            </div>
         </div>
-    </main>
+    </Layout>
     )
 }
 

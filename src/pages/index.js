@@ -2,37 +2,47 @@ import * as React from "react"
 import { Link } from "gatsby"
 import "../style/site.scss"
 import Menu from "../components/menu"
-
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 const IndexPage = () => {
   return (
-    <main>
-        <div className="indexHeader">
-        <nav class="flex items-center justify-between">
-            <ul class="flex items-center justify-between">
+    <Layout>
+      <SEO title="Home" />
+        <div class="container">
+        <nav class="flex items-center justify-between px-2 py-2.5">
+            <ul class="flex items-center justify-between px-2 py-2.5">
               <li class="mr-7">
-                  <Link to="/">Home</Link>
+                  <Link to="/" class="block py-2 pl-3 pr-4">Home</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/about/">About Me</Link>
+                  <Link to="/about/" class="block py-2 pl-3 pr-4">About Me</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/projects/">Projects</Link>
+                  <Link to="/projects/" class="block py-2 pl-3 pr-4">Projects</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/hobbies/">Hobbies</Link>
+                  <Link to="/hobbies/" class="block py-2 pl-3 pr-4">Hobbies</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/contact/">Contact</Link>
+                  <Link to="/contact/" class="block py-2 pl-3 pr-4">Contact</Link>
               </li>
             </ul>
           </nav>
+      
           <h1 class="font-black">MANH ANH TUAN NGUYEN</h1>
-          <h5>Welcome to my web portfolio! Enjoy your stay...</h5>
+          <h4>Welcome to my web portfolio! Enjoy your stay...</h4>
+          <Profile/>
         </div>
-    </main>
+    </Layout>
   )
 }
 
 export default IndexPage
 
 export const Head = () => <title>Home Page</title>
+
+export function Profile() {
+
+  return <StaticImage src="../images/photo.jpg" imgStyle={{border: "10px green"}} alt="portrait"/>
+}

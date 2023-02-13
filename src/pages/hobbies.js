@@ -1,34 +1,34 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "../style/site.scss"
-
+import Layout from "../components/layout"
 const HobbiesPage = () => {
     return (
-        <main>
-        <div className="indexHeader">
+        <Layout>
+        <div class="container">
         <nav class="flex items-center justify-between">
             <ul class="flex items-center justify-between">
               <li class="mr-7">
-                  <Link to="/">Home</Link>
+                  <Link to="/" class="block py-2 pl-3 pr-4">Home</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/about/">About Me</Link>
+                  <Link to="/about/" class="block py-2 pl-3 pr-4">About Me</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/projects/">Projects</Link>
+                  <Link to="/projects/" class="block py-2 pl-3 pr-4">Projects</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/hobbies/">Hobbies</Link>
+                  <Link to="/hobbies/" class="block py-2 pl-3 pr-4">Hobbies</Link>
               </li>
               <li class="mr-7">
-                  <Link to="/contact/">Contact</Link>
+                  <Link to="/contact/" class="block py-2 pl-3 pr-4">Contact</Link>
               </li>
             </ul>
           </nav>
           <h1 class="font-black">HOBBIES</h1>
           <h4></h4>
         </div>
-    </main>
+    </Layout>
     )
 }
 

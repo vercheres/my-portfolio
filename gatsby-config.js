@@ -5,7 +5,9 @@
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://hathena-portfolio.vercel.app`,
+    description: `My personal web portfolio`,
+    author:`Tuan`,
   },
   plugins: ["gatsby-plugin-image","gatsby-plugin-styled-components","gatsby-plugin-postcss", "gatsby-plugin-sass", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',

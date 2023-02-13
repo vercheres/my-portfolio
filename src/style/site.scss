@@ -4,7 +4,6 @@ body {
     background-color: #fdf0d5;
 
     main {
-        .indexHeader {
             position: absolute;
             top: 0;
             padding: 23px 0 0 100px;
@@ -19,17 +18,15 @@ body {
                 color: #1b263b;
                 margin-bottom: 0;
             }
-            p {
+            p{
                 font-size: 21px;
             }
             li {
                 color: #780000;
                 &:hover {
-                    color: #b23a48;
-                    font-weight: 750;
+                    color: #2a9d8f;
                 }
             }
-        }
         .errorM {
             position: absolute;
             top: 0;
@@ -41,5 +38,12 @@ body {
             }
         }
         font-family: 'Sofia Sans';
+    }
+
+    footer {
+
+        font-family: 'Sofia Sans'; 
+        position: fixed;
+        bottom: 0;
     }
 }

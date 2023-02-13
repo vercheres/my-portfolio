@@ -1,10 +1,11 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import "../style/site.scss";
-
+import Layout from "../components/layout";
 const ContactPage = () => {
   return (
-    <main>
+    <Layout>
       <div className="indexHeader">
         <nav class="flex items-center justify-between">
           <ul class="flex items-center justify-between">
@@ -26,6 +27,7 @@ const ContactPage = () => {
           </ul>
         </nav>
         <h1 class="font-black">LET'S GET IN TOUCH</h1>
+        
         <form class="w-full max-w-lg" method="post" action="https://getform.io/f/71dc70f1-2cc4-41bf-90aa-bdb768b516e6">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -57,7 +59,7 @@ const ContactPage = () => {
           <input type="reset" value="Clear" />
         </form>
       </div>
-    </main>
+    </Layout>
   );
 };
 
