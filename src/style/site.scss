@@ -23,7 +23,7 @@ body {
             }
             li {
                 color: #780000;
-                &:hover {
+                &.active, &:hover {
                     color: #2a9d8f;
                 }
             }

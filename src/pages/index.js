@@ -31,7 +31,6 @@ const IndexPage = () => {
             </div>
             </div>
           </nav>
-      
           <h1 class="font-black">MANH ANH TUAN NGUYEN</h1>
           <h4>Welcome to my web portfolio! Enjoy your stay...</h4>
           <Profile/>
@@ -44,6 +43,5 @@ export default IndexPage
 export const Head = () => <title>Home Page</title>
 
 export function Profile() {
-
   return <StaticImage src="../images/photo.jpg" imgStyle={{ objectFit: 'contain' }} alt="portrait"/>
 }

@@ -1,15 +1,29 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "../style/site.scss"
-import { getProjects } from "../utils/logger"
 import { firestore } from "../utils/firebase"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { useState } from "react"
+import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
 
 const ProjectPage = () => {
+
+    const [projects, setProjects] = useState([])
+
+    const fetchProjects = async() => {
+        firestore.collection('projects').get().then(snapshot => {
+            snapshot.forEach(entry => {
+                var data = entry.data()
+                setProjects(arr => [...arr, data])
+            })
+        })
+    }
+
     React.useEffect(() => {
-        getProjects()
+        fetchProjects();
     }, [])
+
     return (
         <Layout>
         <SEO title="projects"/>
@@ -37,10 +51,25 @@ const ProjectPage = () => {
             </div>
           </nav>
             <h1 class="font-black">PROJECTS</h1>
-            <h4>A list of projects that I worked on/have been a part of, amusez vous!</h4>
+            <h4>Here are some projects that I worked on/have been a part of in the past.</h4>
+            <br/>
             <div class="flex">
                 <div className="projectDetail">
-                    {}
+                    {
+                        projects && projects.map(project => {
+                            console.log(project)
+                            return (
+                                <div className="projectContainer">
+                                    <a href={project.link}>
+                                            <h4>{project.name}</h4>
+                                    </a>
+                                            <p>{project.description}</p>
+                                            <p>Technologies: {project.technologies}</p>
+
+                                </div>  
+                            )
+                        })
+                    }
                 </div>
             </div>
     </Layout>
