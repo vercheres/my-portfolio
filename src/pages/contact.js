@@ -3,29 +3,36 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import "../style/site.scss";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
+
 const ContactPage = () => {
   return (
     <Layout>
-      <div className="indexHeader">
-        <nav class="flex items-center justify-between">
-          <ul class="flex items-center justify-between">
-            <li class="mr-7">
-              <Link to="/">Home</Link>
-            </li>
-            <li class="mr-7">
-              <Link to="/about/">About Me</Link>
-            </li>
-            <li class="mr-7">
-              <Link to="/projects/">Projects</Link>
-            </li>
-            <li class="mr-7">
-              <Link to="/hobbies/">Hobbies</Link>
-            </li>
-            <li class="mr-7">
-              <Link to="/contact/">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+        <SEO title="About"/>
+        <SEO title="projects"/>
+        <nav class="flex items-center sm:px-4 px-2 py-2.5">
+          <div class="container flex flex-wrap items-center justify-between mx-auto">
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
+              <li>
+                  <Link to="/" class="block py-2 pl-3 pr-4 md:p-0">Home</Link>
+              </li>
+              <li>
+                  <Link to="/about/" class="block py-2 pl-3 pr-4 md:p-0">About Me</Link>
+              </li>
+              <li>
+                  <Link to="/projects/" class="block py-2 pl-3 pr-4 md:p-0">Projects</Link>
+              </li>
+              <li>
+                  <Link to="/hobbies/" class="block py-2 pl-3 pr-4 md:p-0">Hobbies</Link>
+              </li>
+              <li>
+                  <Link to="/contact/" class="block py-2 pl-3 pr-4 md:p-0">Contact</Link>
+              </li>
+            </ul>
+            </div>
+            </div>
+          </nav>
         <h1 class="font-black">LET'S GET IN TOUCH</h1>
         
         <form class="w-full max-w-lg" method="post" action="https://getform.io/f/71dc70f1-2cc4-41bf-90aa-bdb768b516e6">
@@ -58,7 +65,7 @@ const ContactPage = () => {
           <button type="submit">Send</button>
           <input type="reset" value="Clear" />
         </form>
-      </div>
+
     </Layout>
   );
 };
