@@ -1,10 +1,20 @@
 import * as React from "react"
+import { useState } from "react"
 import { Link } from "gatsby"
 import "../style/site.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
+import TextScramble, { ScrambleTexts } from '@twistezo/react-text-scramble'
+
+const texts = [
+  'MANH ANH TUAN NGUYEN',
+  'INTERN @ SERTI',
+  'CS STUDENT @ CÉGÉP CHAMPLAIN SAINT-LAMBERT'
+]
 const IndexPage = () => {
+  const [pause, setPause] = useState(false)
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -31,9 +41,16 @@ const IndexPage = () => {
             </div>
             </div>
           </nav>
-          <h1 class="font-black">MANH ANH TUAN NGUYEN</h1>
+          <h1 class="font-black"><TextScramble
+          texts={texts}
+          letterSpeed={10}
+          nextLetterSpeed={100}
+          pauseTime={1500}
+          paused={pause}
+        /></h1>
           <h4>Welcome to my web portfolio! Enjoy your stay...</h4>
-          <Profile/>
+          
+          <StaticImage src="../images/photo.jpg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={350} height={500} quality={90} />
     </Layout>
   )
 }
@@ -41,7 +58,3 @@ const IndexPage = () => {
 export default IndexPage
 
 export const Head = () => <title>Home Page</title>
-
-export function Profile() {
-  return <StaticImage src="../images/photo.jpg" imgStyle={{ objectFit: 'contain' }} alt="portrait"/>
-}

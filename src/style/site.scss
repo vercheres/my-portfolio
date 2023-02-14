@@ -4,12 +4,13 @@ body {
     background-color: #d8f3dc;
 
     main {
+            
             position: absolute;
             top: 0;
             padding: 23px 0 0 100px;
 
-            h1 {
-                font-size: 65px;
+            h1, h2, h3{
+                font-size: 45px;
                 color: #40916c;
                 margin-bottom: 0;
             }
@@ -29,6 +30,7 @@ body {
                     color: #57cc99;
                 }
             }
+
         .errorM {
             position: absolute;
             top: 0;
@@ -40,9 +42,10 @@ body {
             }
         }
         .projectContainer {
-            max-width: 100%;
-            height: auto;
+            display:flex;
+          
         }
+       
         font-family: 'Sofia Sans';
     }
     footer {

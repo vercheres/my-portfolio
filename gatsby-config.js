@@ -9,7 +9,7 @@ module.exports = {
     description: `My personal web portfolio`,
     author:`Tuan`,
   },
-  plugins: ["gatsby-plugin-image","gatsby-plugin-styled-components","gatsby-plugin-postcss", "gatsby-plugin-sass", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-image","gatsby-plugin-emotion","gatsby-plugin-styled-components","gatsby-plugin-postcss", "gatsby-plugin-sass", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"

@@ -3,7 +3,21 @@ import { Link } from "gatsby"
 import "../style/site.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ProgressBar from "../components/progress-bar"
 const AboutPage = () => {
+    const programmingData = [
+        { bgcolor: "#ffbf69", completed: 90, label: 'Swift' },
+        { bgcolor: "#ef476f", completed: 89, label: 'Java' },
+        { bgcolor: "#118ab2", completed: 80, label: 'Python' },
+        { bgcolor: "#06d6a0", completed: 60, label: 'C#' },
+        { bgcolor: "#9b5de5", completed: 53, label: 'C++' },
+      ];
+      const languagesData = [
+        { bgcolor: "#ffbf69", completed: 95, label: 'Vietnamese' },
+        { bgcolor: "#ef476f", completed: 95, label: 'English' },
+        { bgcolor: "#118ab2", completed: 75, label: 'French' },
+       
+      ];
     return (
         <Layout>
           <SEO title="About"/>
@@ -33,6 +47,15 @@ const AboutPage = () => {
         
           <h1 class="font-black">ABOUT ME</h1>
           <p class="break-words">So a little bit about myself, I am a 4th year CS college student based in Saint-Lambert, Québec. I have had the privilege to work with a multitude of technologies, software, frameworks, and last but not least: my peers, throughout the years in the program. </p>
+          <h4 class="font-black">Skills</h4>
+          <p>Programming languages</p>
+          {programmingData.map((item, idx) => (
+            <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} label={item.label} />
+          ))}
+          <p>Languages</p>
+          {languagesData.map((item, idx) => (
+            <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} label={item.label} />
+          ))}
     </Layout>
     )
 }
