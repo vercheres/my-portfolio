@@ -67,8 +67,8 @@ const ProjectPage = () => {
                                     <a href={project.link}>
                                             <h4>{project.name}</h4>
                                     </a>
-                                            <p>{project.description}</p>
-                                            <p>Technologies: {project.technologies}</p>
+                                            <p class="break-words">{project.description}</p>
+                                            <p class="break-words">Technologies: {project.technologies}</p>
                                 </div>  
                             )
                         })

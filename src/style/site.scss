@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #fdf0d5;
+    background-color: #d8f3dc;
 
     main {
             position: absolute;
@@ -10,7 +10,7 @@ body {
 
             h1 {
                 font-size: 65px;
-                color: #415a77;
+                color: #40916c;
                 margin-bottom: 0;
             }
             h4 {
@@ -19,13 +19,14 @@ body {
                 margin-bottom: 0;
             }
             p{
+                color: #005f73;
                 font-size: 21px;
             }
             li {
-                color: #780000;
+                color: #0a9396;
                 font-weight: bold;
                 &.active, &:hover {
-                    color: #2a9d8f;
+                    color: #57cc99;
                 }
             }
         .errorM {

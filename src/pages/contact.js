@@ -41,8 +41,9 @@ const ContactPage = () => {
               <label class="block uppercase tracking-wide text-gray-700 text-m font-bold mb-2" for="grid-name">
                 Name
               </label>
+            
+            <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 font-bold" id="grid-email" type="name"/>
             </div>
-            <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white font-bold" id="grid-first-name" type="text" name="name"/>
             <div class="w-full md:w-1/2 px-3">
               <label class="block uppercase tracking-wide text-gray-700 text-m font-bold mb-2" for="grid-email">
                 Email
@@ -51,19 +52,17 @@ const ContactPage = () => {
             </div>
           </div>
           <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
-                <label>
-                    Subject
-                 </label>
-            </div>
-            <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 font-bold" id="grid-subject" type="text" name="name" />
-          </div>
-          <label>
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-m font-bold mb-2" for="grid-password">
                 Message
-            <input type="message" name="emailmessage" id="messageInput" />
-          </label>
-          <button type="submit">Send</button>
-          <input type="reset" value="Clear" />
+            </label>
+              <textarea class="no-resize appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" type="message" name="emailmessage" id="messageInput" />
+            </div>
+          </div>
+          <div class="flex-container">
+            <button  class="shadow bg-[#0081a7] hover:bg-[#029ecc] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">Send</button>
+            <input class="shadow bg-[#a53860] hover:bg-[#da627d] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"type="reset" value="Clear" />
+          </div>
         </form>
 
     </Layout>
