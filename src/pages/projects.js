@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { useState } from "react"
-import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
 
 const ProjectPage = () => {
 
