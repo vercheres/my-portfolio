@@ -4,6 +4,7 @@ import "../style/site.scss"
 import { firestore } from "../utils/firebase"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
 import { useState } from "react"
 import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
 
@@ -54,18 +55,20 @@ const ProjectPage = () => {
             <h4>Here are some projects that I worked on/have been a part of in the past.</h4>
             <br/>
             <div class="flex">
-                <div className="projectDetail">
+                <div class="grid grid-cols-3 content-between" className="projectDetail">
                     {
                         projects && projects.map(project => {
                             console.log(project)
+                            const screenshot = project.screenshot
                             return (
+                                
                                 <div className="projectContainer">
+                                    <img class="object-contain" src={screenshot} max-width="100"/>
                                     <a href={project.link}>
                                             <h4>{project.name}</h4>
                                     </a>
                                             <p>{project.description}</p>
                                             <p>Technologies: {project.technologies}</p>
-
                                 </div>  
                             )
                         })

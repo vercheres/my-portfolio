@@ -23,6 +23,7 @@ body {
             }
             li {
                 color: #780000;
+                font-weight: bold;
                 &.active, &:hover {
                     color: #2a9d8f;
                 }
@@ -37,9 +38,12 @@ body {
                 margin-bottom: 0;
             }
         }
+        .projectContainer {
+            max-width: 100%;
+            height: auto;
+        }
         font-family: 'Sofia Sans';
     }
-
     footer {
 
         font-family: 'Sofia Sans'; 
