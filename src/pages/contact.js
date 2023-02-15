@@ -36,8 +36,8 @@ const ContactPage = () => {
             </div>
             </div>
           </nav>
+          <div class="flex-none w-32">
         <h1 class="font-black">LET'S GET IN TOUCH</h1>
-        
         <form class="w-full max-w-lg" method="post" action="https://getform.io/f/71dc70f1-2cc4-41bf-90aa-bdb768b516e6">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -64,10 +64,12 @@ const ContactPage = () => {
           </div>
           <div class="flex space-x-4">
             <button disabled={!email || !name || !message} class="shadow bg-[#0081a7] hover:bg-[#029ecc] focus:shadow-outline disabled:bg-gray-500 focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">Send</button>
-            <button class="shadow bg-[#a53860] hover:bg-[#da627d] focus:shadow-outline disabled:bg-gray-500 focus:outline-none text-white font-bold py-2 px-4 rounded" type="reset">Clear</button>
           </div>
         </form>
-
+        </div>
+        <div class="flex-1 w-32">
+          
+        </div>
     </Layout>
   );
 };

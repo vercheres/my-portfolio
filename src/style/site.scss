@@ -9,10 +9,14 @@ body {
             top: 0;
             padding: 23px 0 0 100px;
 
-            h1, h2, h3{
-                font-size: 45px;
+            h1{
+                font-size:64px;
                 color: #40916c;
                 margin-bottom: 0;
+            }
+            h2, h3 {
+                font-size: 34px;
+                color: #57cc99;
             }
             h4 {
                 font-size: 28px;
@@ -27,7 +31,7 @@ body {
                 color: #0a9396;
                 font-weight: bold;
                 &.active, &:hover {
-                    color: #57cc99;
+                    color: #9d4edd;
                 }
             }
 
@@ -43,11 +47,8 @@ body {
         }
         .projectDetail {
             display:flex;
-            .projectContainer {
-                max-height: max-content;
-            }
+            max-height: max-content;
         }
-       
         font-family: 'Sofia Sans';
     }
     footer {

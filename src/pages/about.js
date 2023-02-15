@@ -6,9 +6,10 @@ import SEO from "../components/seo"
 import ProgressBar from "../components/progress-bar"
 const AboutPage = () => {
     const programmingData = [
-        { bgcolor: "#ffbf69", completed: 90, label: 'Swift' },
+        { bgcolor: "#ffbf69", completed: 90, label: 'iOS Development' },
         { bgcolor: "#ef476f", completed: 89, label: 'Java' },
-        { bgcolor: "#118ab2", completed: 80, label: 'Python' },
+        { bgcolor: "#118ab2", completed: 84, label: 'Python' },
+        { bgcolor: "#8ac926", completed: 85, label: 'HTML & CSS' },
         { bgcolor: "#06d6a0", completed: 60, label: 'C#' },
         { bgcolor: "#9b5de5", completed: 53, label: 'C++' },
       ];
@@ -47,12 +48,14 @@ const AboutPage = () => {
         
           <h1 class="font-black">ABOUT ME</h1>
           <p class="break-words">So a little bit about myself, I am a 4th year CS college student based in Saint-Lambert, Québec. I have had the privilege to work with a multitude of technologies, software, frameworks, and last but not least: my peers, throughout the years in the program. </p>
-          <h4 class="font-black">Skills</h4>
-          <p>Programming languages</p>
+
+          <h4 class="font-black">My professional skills</h4>
+          <p></p>
           {programmingData.map((item, idx) => (
             <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} label={item.label} />
           ))}
-          <p>Languages</p>
+          <h4 class="font-black">My language skills</h4>
+
           {languagesData.map((item, idx) => (
             <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} label={item.label} />
           ))}

@@ -31,7 +31,8 @@ const HobbiesPage = () => {
             </div>
           </nav>
           <h1 class="font-black">HOBBIES</h1>
-          <h4></h4>
+          <h4 class="font-black"></h4>
+
 
     </Layout>
     )
