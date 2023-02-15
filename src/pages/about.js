@@ -8,10 +8,10 @@ const AboutPage = () => {
     const programmingData = [
         { bgcolor: "#ffbf69", completed: 90, label: 'iOS Development' },
         { bgcolor: "#ef476f", completed: 89, label: 'Java' },
-        { bgcolor: "#118ab2", completed: 84, label: 'Python' },
-        { bgcolor: "#8ac926", completed: 85, label: 'HTML & CSS' },
-        { bgcolor: "#06d6a0", completed: 60, label: 'C#' },
-        { bgcolor: "#9b5de5", completed: 53, label: 'C++' },
+        { bgcolor: "#118ab2", completed: 85, label: 'Python' },
+        { bgcolor: "#8ac926", completed: 88, label: 'HTML & CSS' },
+        { bgcolor: "#06d6a0", completed: 87, label: 'C#' },
+        { bgcolor: "#9b5de5", completed: 79, label: 'C++' },
       ];
       const languagesData = [
         { bgcolor: "#ffbf69", completed: 95, label: 'Vietnamese' },
