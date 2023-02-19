@@ -7,8 +7,9 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
+import Footer from "./footer"
 import '../style/site.scss'
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -24,12 +25,8 @@ const Layout = ({ children }) => {
     <>
       <div>
         <main>{children}</main>
-        
-        <footer>
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+        <hr/>
+        <Footer/>
       </div>
     </>
   )

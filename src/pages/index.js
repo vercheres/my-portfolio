@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useState } from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import "../style/site.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -41,16 +41,16 @@ const IndexPage = () => {
             </div>
             </div>
           </nav>
-          <h1 class="font-black"><TextScramble
-          texts={texts}
-          letterSpeed={10}
-          nextLetterSpeed={100}
-          pauseTime={1500}
-          paused={pause}
-        /></h1>
-          <h4>Welcome to my web portfolio! Enjoy your stay...</h4>
-          
-          <StaticImage src="../images/photo.jpg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={350} height={500} quality={90} />
+          <h1 class="font-black"><TextScramble texts={texts} letterSpeed={10} nextLetterSpeed={100} pauseTime={1500}paused={pause}/></h1>
+           <h4>Welcome to my web portfolio! Enjoy your stay...</h4>
+          <div class="flex flex-row gap-8">
+            <div> 
+              <StaticImage src="../images/photo.jpg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={350} height={500} quality={90} />
+            </div>
+            <div>
+              <StaticImage src="../images/photo.jpg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={350} height={500} quality={90} />
+            </div>
+          </div>
     </Layout>
   )
 }

@@ -49,6 +49,11 @@ const AboutPage = () => {
           <h1 class="font-black">ABOUT ME</h1>
           <p class="break-words">So a little bit about myself, I am a 4th year CS college student based in Saint-Lambert, Québec. I have had the privilege to work with a multitude of technologies, software, frameworks, and last but not least: my peers, throughout the years in the program. </p>
 
+          <h3 class="font-black">Education</h3>
+          <div class="accordion">
+            
+          </div>
+
           <h4 class="font-black">My professional skills</h4>
           <p></p>
           {programmingData.map((item, idx) => (

@@ -32,7 +32,7 @@ const HobbiesPage = () => {
           </nav>
           <h1 class="font-black">HOBBIES</h1>
           <h4 class="font-black"></h4>
-
+          <p class="break-words"> </p>
 
     </Layout>
     )
