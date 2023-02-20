@@ -4,13 +4,12 @@ body {
     background-color: #d8f3dc;
 
     main {
-            
-            position: absolute;
+            position: static;
             top: 0;
             padding: 23px 0 0 100px;
 
             h1{
-                font-size:64px;
+                font-size:54px;
                 color: #40916c;
                 margin-bottom: 0;
             }
@@ -20,12 +19,12 @@ body {
             }
             h4 {
                 font-size: 28px;
-                color: #1b263b;
+                color: #1b4332;
                 margin-bottom: 0;
             }
             p{
                 color: #005f73;
-                font-size: 21px;
+                font-size: 29px;
             }
             li {
                 color: #0a9396;
@@ -49,6 +48,7 @@ body {
             display:flex;
             max-height: max-content;
         }
+       
         font-family: 'Sofia Sans';
     }
     footer {
@@ -58,3 +58,4 @@ body {
         bottom: 0;
     }
 }
+

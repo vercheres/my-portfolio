@@ -4,7 +4,8 @@ import "../style/site.scss"
 import { firestore } from "../utils/firebase"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { useState } from "react"
 
 const ProjectPage = () => {
@@ -35,16 +36,20 @@ const ProjectPage = () => {
                   <Link to="/" class="block py-2 pl-3 pr-4 md:p-0">Home</Link>
               </li>
               <li>
-                  <Link to="/about/" class="block py-2 pl-3 pr-4 md:p-0">About Me</Link>
+                  <Link to="/skills/" class="block py-2 pl-3 pr-4 md:p-0">Skills</Link>
               </li>
               <li>
                   <Link to="/projects/" class="block py-2 pl-3 pr-4 md:p-0">Projects</Link>
               </li>
               <li>
-                  <Link to="/hobbies/" class="block py-2 pl-3 pr-4 md:p-0">Hobbies</Link>
+                  <Link to="/contact/" class="block py-2 pl-3 pr-4 md:p-0">Contact</Link>
+              </li>
+              
+              <li>
+                  <a href="https://www.linkedin.com/in/anhtuannguyen14/"><FaLinkedin/></a>
               </li>
               <li>
-                  <Link to="/contact/" class="block py-2 pl-3 pr-4 md:p-0">Contact</Link>
+                  <a href="https://github.com/vercheres"><FaGithub/></a>
               </li>
             </ul>
             </div>

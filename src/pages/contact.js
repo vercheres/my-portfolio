@@ -5,6 +5,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import "../style/site.scss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 
 const ContactPage = () => {
   const [name, setName] = useState('')
@@ -21,23 +23,28 @@ const ContactPage = () => {
                   <Link to="/" class="block py-2 pl-3 pr-4 md:p-0">Home</Link>
               </li>
               <li>
-                  <Link to="/about/" class="block py-2 pl-3 pr-4 md:p-0">About Me</Link>
+                  <Link to="/skills/" class="block py-2 pl-3 pr-4 md:p-0">Skills</Link>
               </li>
               <li>
                   <Link to="/projects/" class="block py-2 pl-3 pr-4 md:p-0">Projects</Link>
               </li>
               <li>
-                  <Link to="/hobbies/" class="block py-2 pl-3 pr-4 md:p-0">Hobbies</Link>
-              </li>
-              <li>
                   <Link to="/contact/" class="block py-2 pl-3 pr-4 md:p-0">Contact</Link>
               </li>
+              <li>
+                  <a href="https://www.linkedin.com/in/anhtuannguyen14/"><FaLinkedin/></a>
+              </li>
+              <li>
+                  <a href="https://github.com/vercheres"><FaGithub/></a>
+              </li>
+            
             </ul>
             </div>
             </div>
           </nav>
           <div class="flex-none">
         <h1 class="font-black">LET'S GET IN TOUCH</h1>
+        <div class="flex justify-center">
         <form class="w-full max-w-lg" method="post" action="https://getform.io/f/71dc70f1-2cc4-41bf-90aa-bdb768b516e6">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -66,6 +73,7 @@ const ContactPage = () => {
             <button disabled={!email || !name || !message} class="shadow bg-[#0081a7] hover:bg-[#029ecc] focus:shadow-outline disabled:bg-gray-500 focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">Send</button>
           </div>
         </form>
+        </div>
         </div>
         
     </Layout>

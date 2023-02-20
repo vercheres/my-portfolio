@@ -1,5 +1,5 @@
 import { firestore } from "./firebase";
-import { useState } from "react"
+
 
 const getProjects = async () => {
     const snapshot = await firestore.collection('projects').get()
