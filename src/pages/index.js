@@ -5,10 +5,10 @@ import "../style/site.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
-import TextScramble, { ScrambleTexts } from '@twistezo/react-text-scramble'
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import Typewriter from 'typewriter-effect';
+import PDF from './Tuan_Resume_Stage.pdf';
 
 const texts = [
   'INTERN @ SERTI KEYLOOP',
@@ -18,14 +18,14 @@ const IndexPage = () => {
   const [pause, setPause] = useState(false)
   
   const onDownloadClick = () => {
-    fetch('My_Resume_Stage.pdf').then(response => {
+    fetch(PDF).then(response => {
       response.blob().then(blob => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement('a');
         alink.href = fileURL;
-        alink.download = 'My_Resume_Stage.pdf';
+        alink.download = PDF;
         alink.click();
     })
     })
@@ -61,31 +61,33 @@ const IndexPage = () => {
             </div>
           </nav>
           <h1 class="font-black">PORTFOLIO</h1>
-          <div class="flex flex-row gap-4">
+          <div class="flex flex-row mb-13 gap-4">
             <div> 
               <StaticImage src="../images/photo.jpg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={350} height={500} quality={90} />
             </div>
             <div class="flex-col">
               <h3 class="font-black"><Typewriter options={{strings: "Manh Anh Tuan, Nguyen", autoStart: true, loop: false}}/></h3>
               <h4 class="font-black"><Typewriter options={{strings: texts, autoStart: true, loop: true}}/></h4>
-              <p>Hello! My name's Tuan</p>
+              <p>Hi, thank you for visiting my website! My name's Tuan.</p>
               <p>I am a Computer Science student based in Saint-Lambert, Québec.</p>
-              <p></p>
+              <p>With 4 years of experience working with a myriad of programming languages, software, and technologies.</p>
+              <p>You can check out my résumé below.</p>
               <button class="shadow bg-[#0081a7] hover:bg-[#029ecc] focus:shadow-outline disabled:bg-gray-500 focus:outline-none text-white font-bold py-2 px-4 rounded" onClick={onDownloadClick}>Resume</button>
             </div>
           </div>
-          <div class="flex flex-row gap-4">
-            
+          <br/>
+          <br/>
+          <div class="flex flex-row mt-10 gap-4">
             <div class="flex-col">
-              <h3 class="font-black"><Typewriter options={{strings: "Manh Anh Tuan, Nguyen", autoStart: true, loop: false}}/></h3>
-              <h4 class="font-black"><Typewriter options={{strings: texts, autoStart: true, loop: true}}/></h4>
-              <p>Hello! My name's Tuan</p>
-              <p>I am a Computer Science student based in Saint-Lambert, Québec.</p>
+              <h3 class="font-black"><Typewriter options={{strings: "Education", autoStart: true, loop: false}}/></h3>
+              <h4 class="font-black"><Typewriter options={{strings: "2019-2023", autoStart: true, loop: false}}/></h4>
               <p></p>
-              <button class="shadow bg-[#0081a7] hover:bg-[#029ecc] focus:shadow-outline disabled:bg-gray-500 focus:outline-none text-white font-bold py-2 px-4 rounded" onClick={onDownloadClick}>Resume</button>
+              <ul>
+                <li></li>
+              </ul>             
             </div>
             <div> 
-              <StaticImage src="../images/photo.jpg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={350} height={500} quality={90} />
+              <StaticImage src="../images/college.jpeg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={700} height={450} quality={90} />
             </div>
           </div>
     </Layout>

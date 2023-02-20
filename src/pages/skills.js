@@ -68,7 +68,7 @@ const AboutPage = () => {
                 <CircularProgressbarWithChildren value={item.completed} text={`${item.completed}%`} styles={buildStyles({
                   textSize: '15px',
                   pathColor: "#06d6a0",
-                  textColor: "#06d6a0"
+                  textColor: "#1b4332"
                 })}/>    
               </div>
               <div>
@@ -87,7 +87,7 @@ const AboutPage = () => {
                 <CircularProgressbarWithChildren value={item.completed} text={`${item.completed}%`} styles={buildStyles({
                   textSize: '15px',
                   pathColor: "#06d6a0",
-                  textColor: "#06d6a0"
+                  textColor: "#1b4332"
                 })}/>    
               </div>
               <div>
