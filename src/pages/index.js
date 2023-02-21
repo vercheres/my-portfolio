@@ -9,6 +9,7 @@ import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import Typewriter from 'typewriter-effect';
 import PDF from './Tuan_Resume_Stage.pdf';
+import Tilt from 'react-parallax-tilt';
 
 const texts = [
   'INTERN @ SERTI KEYLOOP',
@@ -63,7 +64,9 @@ const IndexPage = () => {
           <h1 class="font-black">PORTFOLIO</h1>
           <div class="flex flex-row mb-13 gap-4">
             <div> 
-              <StaticImage src="../images/photo.jpg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={350} height={500} quality={90} />
+              <Tilt>
+                <StaticImage src="../images/photo.jpg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={350} height={500} quality={90} />
+              </Tilt>
             </div>
             <div class="flex-col">
               <h3 class="font-black"><Typewriter options={{strings: "Manh Anh Tuan, Nguyen", autoStart: true, loop: false}}/></h3>
@@ -81,13 +84,13 @@ const IndexPage = () => {
             <div class="flex-col">
               <h3 class="font-black"><Typewriter options={{strings: "Education", autoStart: true, loop: false}}/></h3>
               <h4 class="font-black"><Typewriter options={{strings: "2019-2023", autoStart: true, loop: false}}/></h4>
-              <p></p>
-              <ul>
-                <li></li>
-              </ul>             
+              <p>I received my collegial-level education from CÉGÉP Champlain Saint-Lambert.</p>
+
             </div>
             <div> 
-              <StaticImage src="../images/college.jpeg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={700} height={450} quality={90} />
+              <Tilt>
+                <StaticImage src="../images/college.jpeg" class="rounded-lg drop-shadow-3xl" layout="constrained" alt="portrait" width={700} height={450} quality={90} />
+              </Tilt>
             </div>
           </div>
     </Layout>
