@@ -12,7 +12,7 @@ module.exports = {
   plugins: ["gatsby-plugin-image","gatsby-plugin-emotion","gatsby-plugin-styled-components","gatsby-plugin-postcss", "gatsby-plugin-sass", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/images/icon_new.png"
     }
   }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
