@@ -148,7 +148,7 @@ const IndexPage = () => {
               These games are a great way to socialize with people from
               different walks of life, whilst also serving as healthy stress
               reducers after a hard day's work. They can also help to minimize the
-              cultural gaps by bridging people from all parts of the globe together.
+              cultural barriers by bridging people from all parts of the globe together.
             </p>
           </div>
         </div>
