@@ -3,27 +3,27 @@ import { Link } from "gatsby"
 import "../style/site.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ProgressBar from "../components/progress-bar"
-
+import AnimatedProgressProvider from "../components/animated-progress"
 import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
+import {easeQuadInOut} from "d3-ease";
 import 'react-circular-progressbar/dist/styles.css';
 
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 const AboutPage = () => {
     const programmingData = [
-        { bgcolor: "#ffbf69", completed: 90, label: 'iOS Development' },
-        { bgcolor: "#ef476f", completed: 89, label: 'Java' },
-        { bgcolor: "#118ab2", completed: 85, label: 'Python' },
-        { bgcolor: "#8ac926", completed: 88, label: 'HTML & CSS' },
-        { bgcolor: "#06d6a0", completed: 87, label: 'C#' },
-        { bgcolor: "#9b5de5", completed: 79, label: 'C++' },
+        {completed: 94, label: 'Swift' },
+        {completed: 89, label: 'SQL' },
+        {completed: 85, label: 'PHP' },
+        {completed: 86, label: 'Python' },
+        {completed: 89, label: 'Java' },
+        {completed: 79, label: 'C#' }
       ];
-      const languagesData = [
-        { bgcolor: "#ffbf69", completed: 95, label: 'Vietnamese' },
-        { bgcolor: "#ef476f", completed: 95, label: 'English' },
-        { bgcolor: "#118ab2", completed: 75, label: 'French' },
-       
+
+    const languagesData = [
+        {completed: 95, label: 'Vietnamese' },
+        {completed: 95, label: 'English' },
+        {completed: 75, label: 'French' },
       ];
     return (
         <Layout>
@@ -59,17 +59,24 @@ const AboutPage = () => {
          
           <div class="my-8 mb-14">
             <h4 class="font-black">My professional skills</h4>
-            <p></p>
+            <p>I would say the</p>
           </div>
           <div class="flex gap-7">
           {programmingData.map((item) => (
             <div class="flex flex-col justify-center" style={{ width: 150, height: 150}}>
               <div >
-                <CircularProgressbarWithChildren value={item.completed} text={`${item.completed}%`} styles={buildStyles({
+              <AnimatedProgressProvider valueStart={0} valueEnd={item.completed} duration={1.2} easingFunction={easeQuadInOut}>
+                {value => {
+                  const rounded = Math.round(value) 
+                  return (
+                <CircularProgressbarWithChildren value={rounded} text={`${rounded}%`} styles={buildStyles({
                   textSize: '15px',
                   pathColor: "#06d6a0",
                   textColor: "#1b4332"
-                })}/>    
+                })}/>
+                  )
+                }}   
+                </AnimatedProgressProvider>    
               </div>
               <div>
                 <p class="text-center text-[20px] mt-3">{item.label}</p>
@@ -83,12 +90,19 @@ const AboutPage = () => {
           <div class="flex gap-7">
           {languagesData.map((item) => (
             <div class="flex flex-col justify-center" style={{ width: 150, height: 150}}>
-              <div >
-                <CircularProgressbarWithChildren value={item.completed} text={`${item.completed}%`} styles={buildStyles({
+              <div>
+              <AnimatedProgressProvider valueStart={0} valueEnd={item.completed} duration={1.2} easingFunction={easeQuadInOut}>
+                {value => {
+                  const rounded = Math.round(value) 
+                  return (
+                <CircularProgressbarWithChildren value={rounded} text={`${rounded}%`} styles={buildStyles({
                   textSize: '15px',
                   pathColor: "#06d6a0",
                   textColor: "#1b4332"
                 })}/>    
+                  )
+              }}
+              </AnimatedProgressProvider>
               </div>
               <div>
                 <p class="text-center text-[20px] mt-3">{item.label}</p>

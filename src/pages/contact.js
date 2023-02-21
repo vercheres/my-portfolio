@@ -42,9 +42,11 @@ const ContactPage = () => {
             </div>
             </div>
           </nav>
-          <div class="flex-none">
+
         <h1 class="font-black">LET'S GET IN TOUCH</h1>
+        <div class="flex-none">
         <div class="flex justify-center">
+        
         <form class="w-full max-w-lg" method="post" action="https://getform.io/f/71dc70f1-2cc4-41bf-90aa-bdb768b516e6">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
