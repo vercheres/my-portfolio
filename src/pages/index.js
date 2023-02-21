@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import {MdCloudDownload} from "@react-icons/all-files/md/MdCloudDownload";
 import Typewriter from "typewriter-effect";
 import PDF from "./Tuan_Resume_Stage.pdf";
 import Tilt from "react-parallax-tilt";
@@ -109,10 +110,13 @@ const IndexPage = () => {
           </p>
           <p>You can download a copy of my résumé below.</p>
           <button
-            class="shadow bg-[#0081a7] hover:bg-[#029ecc] focus:shadow-outline disabled:bg-gray-500 focus:outline-none text-white font-bold py-2 px-4 rounded"
+            class="shadow bg-[#0081a7] hover:bg-[#029ecc] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-flex items-center"
             onClick={onDownloadClick}
           >
-            Résumé
+            <svg class="fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <MdCloudDownload/>
+            </svg>
+            <span>Résumé</span>
           </button>
         </div>
       </div>
@@ -140,7 +144,7 @@ const IndexPage = () => {
           </h4>
           <div class="flex-col">
             <p class="break-normal">
-              I consider myself a tabletop game enthusiast. With games spanning
+              I consider myself a tabletop game enthusiast, with games spanning
               from classic board/card games to the more recent publications.
             </p>
             <br />
@@ -190,10 +194,10 @@ const IndexPage = () => {
           </h4>
           <p class="break-normal">
             Whenever I don't feel lime picking up a book, I would go on Spotify, and YouTube to listen to
-            podcasts that suit my interests and/or mood.
+            podcasts that suit my interests and/or mood for that particular day of the week.
           </p>
           <p>
-            Wheth
+            I find listening to podcasts as a whole therapeutic
           </p>
         </div>
       </div>
