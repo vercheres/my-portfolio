@@ -197,7 +197,7 @@ const IndexPage = () => {
             podcasts that suit my interests and/or mood for that particular day of the week.
           </p>
           <p>
-            I find listening to podcasts as a whole therapeutic
+            I find listening to podcasts as a whole therapeutic, as it helps to wind down my mind and, at the same time, spark my creativity.
           </p>
         </div>
       </div>
